@@ -9,7 +9,7 @@ import { motion } from 'framer-motion';
 
 export default function Home() {
   return (
-    <div id='home' className='w-full text-white pt-10 text-center'>
+    <div id='home' className='w-full text-white pt-40 text-center'>
 
       <video src={require("../../public/video1.mp4")} autoPlay muted loop className='video' />
 
