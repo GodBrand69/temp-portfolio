@@ -15,10 +15,12 @@ const Contact = () => {
           <div className='col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4'>
             <div className='lg:p-4 h-full '>
               <div>
-                <img
+                <Image
                   className='rounded-xl mx-auto md:hover:scale-105 w-full md:ease-in duration-300'
                   src='/contact.jpg'
                   alt='/'
+                  width={1000}
+                  height={1000}
                 />
               </div>
               <div>

@@ -98,7 +98,7 @@ const Navbar = () => {
           <div style={{ color: `${linkColor}` }} className='hidden md:flex'>
             {isRouting && <Transition />}
             {NavLinks.map((link) => (
-              <ul style={{ color: `${linkColor}` }} className='hidden font-bold text-[#800020] md:flex'>
+              <ul style={{ color: `${linkColor}` }} key={link.name} className='hidden font-bold text-[#800020] md:flex'>
                 <li className='ml-10 text-sm uppercase hover:border-b'>
                   <Link href={link.name}>{link.title}</Link>
                 </li>
@@ -174,7 +174,7 @@ const Navbar = () => {
             <div className='uppercase font-bold text-[#800020]'>
               {isRouting && <Transition />}
               {NavLinks.map((link) => (
-                <ul className='uppercase '>
+                <ul key={link.name} className='uppercase '>
                   <li onClick={() => setNav(false)} className='py-4 text-sm'>
                     <Link href={link.name}>{link.title}</Link>
                   </li>

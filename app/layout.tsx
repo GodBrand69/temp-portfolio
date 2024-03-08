@@ -14,6 +14,11 @@ const spaceGrotesk = Space_Grotesk({
   variable: '--font-spaceGrotesk'
 })
 
+export const metadata = {
+  title: "Abhay Netawat",
+  description: "Portfolio",
+};
+
 export default function RootLayout({
   children,
 }: {
